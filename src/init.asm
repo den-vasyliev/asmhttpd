@@ -64,7 +64,7 @@ shl rsi,12
 syscall(sys_munmap,,)
 
 ; Fork away from calling TTY
-syscall(sys_fork)
+;syscall(sys_fork)
 jz ServeHTTP
 
 syscall(sys_exit,NULL)
