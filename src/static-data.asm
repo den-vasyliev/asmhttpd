@@ -4,7 +4,7 @@ Sighand_SIGPIPE:
 
 SocketAddress:
 	dw 0x0002			; AF_INET is 2 (AF_INET6 is 0xa)
-	dw 0x5000			; TCP Port we want to bind to (:80) (Net byte ordering)
+	dw 0x901F			; TCP Port we want to bind to (:80) (Net byte ordering)
 	dd 0x00000000                   ; Address to bind to (0.0.0.0 or ::)
 	dd 0x00000000
 	dd 0x00000000
